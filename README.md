@@ -26,14 +26,17 @@ cd TrabalhoFrameworkTecWeb
 Após abertura do projeto, vá até o gerenciador de soluções e faça:  
 **É necessário pois o .gitignore evita que esses arquivos sobem para o repositório.**  
 
-1. Selecione o projeto e limpe-o.  
+1. Selecione o projeto e **limpe-o**.  
 ![Limpeza](/screenshots/limpar.jpg "Limpar")  
 
-2. Selecione o projeto e marque-o como projeto de inicialização.  
+2. Selecione o projeto e marque-o como **projeto de inicialização**.  
 ![Inicializacao](/screenshots/projeto_inicializacao.jpg "Inicializacao")  
 
-3. Selecione o projeto e Recompile-o.  
+3. Selecione o projeto e **Recompile-o**.  
 ![Rebuild](/screenshots/rebuild.jpg "Rebuild")
+
+4. Está pronto para executar.  
+**(Fazer estes passos evita um problema que notei em alguns casos ao rodar o projeto importado.)**  
 
 ### Instalar o mysql e configurar o banco de dados.  
 Se não tiver mysql instalado, **recomendo usar a versão 8.0.20**  
