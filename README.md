@@ -29,11 +29,11 @@ Após abertura do projeto, vá até o gerenciador de soluções e faça:
 1. Selecione o projeto e **limpe-o**.  
 ![Limpeza](/screenshots/limpar.jpg "Limpar")  
 
-2. Selecione o projeto e marque-o como **projeto de inicialização**.  
-![Inicializacao](/screenshots/projeto_inicializacao.jpg "Inicializacao")  
-
-3. Selecione o projeto e **Recompile-o**.  
+2. Selecione o projeto e **Recompile-o**.  
 ![Rebuild](/screenshots/rebuild.jpg "Rebuild")
+
+3. Selecione o projeto e marque-o como **projeto de inicialização**.  
+![Inicializacao](/screenshots/projeto_inicializacao.jpg "Inicializacao")  
 
 4. Está pronto para executar.  
 **(Fazer estes passos evita um problema que notei em alguns casos ao rodar o projeto importado.)**  
