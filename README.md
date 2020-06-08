@@ -26,13 +26,13 @@ cd TrabalhoFrameworkTecWeb
 Após abertura do projeto, vá até o gerenciador de soluções e faça:  
 **É necessário pois o .gitignore evita que esses arquivos sobem para o repositório.**  
 
-1. Limpe o projeto.  
+1. Selecione o projeto e limpe-o.  
 ![Limpeza](/screenshots/limpar.jpg "Limpar")  
 
-2. selecione o projeto e marque-o como projeto de inicialização.  
+2. Selecione o projeto e marque-o como projeto de inicialização.  
 ![Inicializacao](/screenshots/projeto_inicializacao.jpg "Inicializacao")  
 
-3. Recompile o projeto.  
+3. Selecione o projeto e Recompile-o.  
 ![Rebuild](/screenshots/rebuild.jpg "Rebuild")
 
 ### Instalar o mysql e configurar o banco de dados.  
