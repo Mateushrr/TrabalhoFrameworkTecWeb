@@ -30,7 +30,7 @@ namespace TecWeb.Dao
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception(ex.ToString());
             }
             finally
             {
@@ -55,7 +55,7 @@ namespace TecWeb.Dao
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception(ex.ToString());
             }
             finally
             {
@@ -75,7 +75,7 @@ namespace TecWeb.Dao
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception(ex.ToString());
             }
             finally
             {
@@ -110,7 +110,7 @@ namespace TecWeb.Dao
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception(ex.ToString());
             }
             finally
             {
@@ -150,7 +150,7 @@ namespace TecWeb.Dao
             }
             catch (Exception ex)
             {
-                throw ex;
+                throw new Exception(ex.ToString());
             }
             finally
             {

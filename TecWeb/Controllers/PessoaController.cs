@@ -26,17 +26,24 @@ namespace TecWeb.Controllers
         [HttpPost]
         public ActionResult Create(Pessoa pessoa)
         {
-            try
+            if (ModelState.IsValid)
             {
-                pessoaDAO pessoaDB = new pessoaDAO();
-                pessoaDB.Salvar(pessoa);
-                
-                return RedirectToAction("ObterTodos");
+                try
+                {
+                    pessoaDAO pessoaDB = new pessoaDAO();
+                    pessoaDB.Salvar(pessoa);
+
+                    return RedirectToAction("ObterTodos");
+                }
+                catch(Exception ex)
+                {
+                    return View(ex.ToString());
+                }
             }
-            catch
+            else
             {
-                return View();
-            }
+                return View(pessoa);
+            }            
         }
 
         // GET: Pessoa/Edit/5
@@ -61,16 +68,23 @@ namespace TecWeb.Controllers
         [HttpPost]
         public ActionResult Edit(int id, Pessoa pessoa)
         {
-            try
+            if (ModelState.IsValid)
             {
-                pessoaDAO pessoaDB = new pessoaDAO();
-                pessoaDB.Editar(pessoa);
+                try
+                {
+                    pessoaDAO pessoaDB = new pessoaDAO();
+                    pessoaDB.Editar(pessoa);
 
-                return RedirectToAction("ObterTodos");
+                    return RedirectToAction("ObterTodos");
+                }
+                catch(Exception ex)
+                {
+                    return View(ex.ToString());
+                }
             }
-            catch
+            else
             {
-                return View();
+                return View(pessoa);
             }
         }
         
