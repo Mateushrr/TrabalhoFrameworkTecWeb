@@ -1,0 +1,37 @@
+﻿@{
+    ViewBag.Title = "Página inicial";
+}
+
+<div class="jumbotron">
+    <h1>ASP.NET MVC</h1>
+    <p class="lead">Trabalho final de tecweb, voltado para framework ASP.NET MVC.
+    <p>
+        A atividade em si é uma pesquisa sobre a framework e um crud simples de pessoa utilizando:
+
+        <ul class="lead">
+            <li>ASP.NET MVC (Model, View e Controller)</li>
+            <li>DAO (Data Access Object)</li>
+            <li>Banco de dados mysql 8</li>
+        </ul>
+
+    </p><br />
+
+    <p><a href="https://github.com/Mateushrr/TrabalhoFrameworkTecWeb" class="btn btn-primary btn-lg" target="_blank">Git da atividade. &raquo;</a></p>
+</div>
+
+<div class="row">
+
+    <div class="col-md-4">
+        <h2>Cadastrar</h2>
+        <p>Cadastrar pessoa. Aqui nada mais faz que iniciar o cadastro de pessoa.</p>
+        <p><a href="@Url.Action("Create", "Pessoa")" class="btn btn-default">Cadastrar</a></p>
+
+    </div>
+
+    <div class="col-md-4">
+        <h2>Listar</h2>
+        <p>Listar pessoas registradas. <br />A exclusão e edição estará de acordo com o cadastro.</p>
+        <p><a href="@Url.Action("ObterTodos", "Pessoa")" class="btn btn-default">Listar</a></p>
+    </div>
+
+</div>

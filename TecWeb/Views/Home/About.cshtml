@@ -1,0 +1,49 @@
+﻿@model IEnumerable<TecWeb.Models.Pessoa>
+
+@{
+    ViewBag.Title = "Sobre";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.cpf)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.idade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.email)
+        </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.cpf)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.idade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+        </tr>
+    }
+
+</table>
+
+<div>
+    @Html.ActionLink("Voltar para pagina inicial", "Index")
+</div>
+
+

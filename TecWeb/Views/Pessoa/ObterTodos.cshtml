@@ -1,0 +1,71 @@
+﻿@model IEnumerable<TecWeb.Models.Pessoa>
+
+@{
+    ViewBag.Title = "Obter todas pessoas";
+    ViewBag.Aviso = "Não há registros.";
+}
+
+<h2>Obter todas pessoas</h2>
+
+<p>
+    @Html.ActionLink("Cadastrar pessoa", "Create")
+</p>
+
+@if (@Model.Count() > 0)
+{
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.cpf)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.idade)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                Operações
+            </th>
+            <th></th>
+        </tr>
+
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.cpf)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.nome)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.idade)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.email)
+                </td>
+                <td>
+                    @Html.ActionLink("Editar", "Edit", new { id = item.id }) |
+                    @Html.ActionLink("Deletar", "Delete", new { id = item.id })
+                </td>
+            </tr>
+        }
+    </table>
+
+}
+else
+{
+    <b></b>
+    @ViewBag.Aviso;
+    <p></p>
+}
+
+<div>
+    @Html.ActionLink("Voltar para pagina inicial", "Index")
+</div>
