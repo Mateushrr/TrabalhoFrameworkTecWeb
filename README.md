@@ -44,6 +44,7 @@ Após abertura do projeto, siga os demais passos:
 4.3. Na lista retornada, clique no pacote **Microsoft.CodeDom.Providers.DotNetCompilerPlatform**  
 4.4. Na direita, será aberto um resumo do pacote, **selecione o projeto**.  
 4.5. Selecione install. Uma vez instalado, feche este Package Manager.  
+4.6. Aceite as opções sugeridas e os termos de uso.
 ![PackageManagerSolutionInstalar](/screenshots/PackageManagerSolutionInstalar.jpg "PackageManagerSolutionInstalar")  
 
 5. Selecione o projeto e marque-o como **Set as Startup Project**.  
