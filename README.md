@@ -30,7 +30,8 @@ Após abertura do projeto, siga os demais passos:
 **Caminho: Tools -> Nuget Package Manager -> Package Manager Console**  
 ![PackageManagerConsole](/screenshots/PackageManagerConsole.jpg "PackageManagerConsole")  
 
-2. Restaure os pacotes (pode levar alguns minutos dependendo do PC, normalmente segundos.).  
+2. Restaure os pacotes (**opção restore**)  
+(pode levar alguns minutos dependendo do PC, normalmente segundos.).  
 ![PackageManagerRestore](/screenshots/PackageManagerRestore.jpg "PackageManagerRestore")  
 
 3. Vá até o Manage NuGet Packages for Solution...  
@@ -45,19 +46,18 @@ Após abertura do projeto, siga os demais passos:
 4.5. Selecione install. Uma vez instalado, feche este Package Manager.  
 ![PackageManagerSolutionInstalar](/screenshots/PackageManagerSolutionInstalar.jpg "PackageManagerSolutionInstalar")  
 
-5. Selecione o projeto e marque-o como **projeto de inicialização**.  
+5. Selecione o projeto e marque-o como **Set as Startup Project**.  
 ![Inicializacao](/screenshots/projeto_inicializacao.jpg "Inicializacao")  
 
-6. Selecione o projeto e **Recompile-o**.  
+6. Selecione o projeto e reconstrua-o **Rebuild**.  
 ![Rebuild](/screenshots/rebuild.jpg "Rebuild")  
 
-Está pronto para executar.  
-**(Fazer estes passos evita um problema que notei em alguns casos ao rodar o projeto importado.)**  
+**Está pronto para executar, mas falta ajustar o banco de dados**  
 
 ### Instalar o mysql e configurar o banco de dados.  
 Se não tiver mysql instalado, **recomendo usar a versão 8.0.20**  
 
-1. No gerenciador de soluções, encontre a **classe Conexao.cs na pasta Dao** do projeto.  
+1. No Solution Explorer, encontre a **classe Conexao.cs na pasta Dao** do projeto.  
 ![ConexaoClasseLocal](/screenshots/conexao.jpg "ConexaoClasseLocal")  
 
 2. Edite a linha 11 de acordo com seu banco de dados.  
@@ -80,4 +80,4 @@ email varchar(50), primary key(id)
 );  
 
 4. Projeto funcional.  
-![ProjetoFinalizado](/screenshots/ProjetoFinalizado.jpg "ProjetoFinalizado") 
+![ProjetoFinalizado](/screenshots/ProjetoFinalizado.jpg "ProjetoFinalizado")  
