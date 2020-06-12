@@ -80,5 +80,5 @@ idade int (3),
 email varchar(50), primary key(id)  
 );  
 
-4. Projeto funcional.  
+#Projeto funcional.  
 ![ProjetoFinalizado](/screenshots/ProjetoFinalizado.jpg "ProjetoFinalizado")  
