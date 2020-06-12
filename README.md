@@ -23,19 +23,35 @@ cd TrabalhoFrameworkTecWeb
 
 ### Abrir o arquivo o projeto (**TecWeb.sln**)  
 
-Após abertura do projeto, vá até o gerenciador de soluções e faça:  
+Após abertura do projeto, siga os demais passos:  
 **É necessário pois o .gitignore evita que esses arquivos sobem para o repositório.**  
 
-1. Selecione o projeto e **limpe-o**.  
-![Limpeza](/screenshots/limpar.jpg "Limpar")  
+1. Vá até o Package Manager Console:  
+**Caminho: Tools -> Nuget Package Manager -> Package Manager Console**  
+![PackageManagerConsole](/screenshots/PackageManagerConsole.jpg "PackageManagerConsole")  
 
-2. Selecione o projeto e **Recompile-o**.  
-![Rebuild](/screenshots/rebuild.jpg "Rebuild")
+2. Restaure os pacotes (pode levar alguns minutos dependendo do PC, normalmente segundos.).  
+![PackageManagerRestore](/screenshots/PackageManagerRestore.jpg "PackageManagerRestore")  
 
-3. Selecione o projeto e marque-o como **projeto de inicialização**.  
+3. Vá até o Manage NuGet Packages for Solution...  
+**Caminho: Tools -> Nuget Package Manager -> Manage NuGet Packages for Solution...**  
+![PackageManagerSolution](/screenshots/PackageManagerSolution.jpg "PackageManagerSolution")  
+
+4. Instale o compilador roslyn.  
+4.1. Selecione o Browse.  
+4.2. Na barra de busca, procure por **roslyn**  
+4.3. Na lista retornada, clique no pacote **Microsoft.CodeDom.Providers.DotNetCompilerPlatform**  
+4.4. Na direita, será aberto um resumo do pacote, **selecione o projeto**.  
+4.5. Selecione install. Uma vez instalado, feche este Package Manager.  
+![PackageManagerSolutionInstalar](/screenshots/PackageManagerSolutionInstalar.jpg "PackageManagerSolutionInstalar")  
+
+5. Selecione o projeto e marque-o como **projeto de inicialização**.  
 ![Inicializacao](/screenshots/projeto_inicializacao.jpg "Inicializacao")  
 
-4. Está pronto para executar.  
+6. Selecione o projeto e **Recompile-o**.  
+![Rebuild](/screenshots/rebuild.jpg "Rebuild")  
+
+Está pronto para executar.  
 **(Fazer estes passos evita um problema que notei em alguns casos ao rodar o projeto importado.)**  
 
 ### Instalar o mysql e configurar o banco de dados.  
@@ -62,3 +78,6 @@ nome varchar(50),
 idade int (3),  
 email varchar(50), primary key(id)  
 );  
+
+4. Projeto funcional.  
+![ProjetoFinalizado](/screenshots/ProjetoFinalizado.jpg "ProjetoFinalizado") 
