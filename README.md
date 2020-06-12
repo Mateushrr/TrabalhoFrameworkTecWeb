@@ -3,7 +3,8 @@
 Trabalho de conclusão da disciplina Tecnologias Web, do curso Sistemas de informação da PUCMinas unidade Barreiro.
 Nesta atividade foi utilizado:
 >
-* Asp net MVC (https://docs.microsoft.com/pt-br/aspnet/mvc/overview/getting-started/introduction/getting-started)  
+
+* ASP .NET MVC (https://docs.microsoft.com/pt-br/aspnet/mvc/overview/getting-started/introduction/getting-started)  
 * Estratégia Dao (Data Access Object) - (https://pt.wikipedia.org/wiki/Objeto_de_acesso_a_dados)  
 * Mysql 8.0.2 (https://dev.mysql.com/downloads/installer/)  
 * MySql.Data.8.0.20 - Pacote no Nuget (ele quem permitirá manipular o mysql).
