@@ -33,7 +33,8 @@ namespace TecWeb.Controllers
                     pessoaDAO pessoaDB = new pessoaDAO();
                     pessoaDB.Salvar(pessoa);
 
-                    return RedirectToAction("ObterTodos");
+                    //return RedirectToAction("ObterTodos");
+                    return Sucesso(pessoa);
                 }
                 catch(Exception ex)
                 {
@@ -111,6 +112,12 @@ namespace TecWeb.Controllers
             List<Pessoa> pessoa = pessoaDB.Listar();
 
             return View(pessoa);
+        }
+
+        //Página de sucesso, entrega dados da pessoa.
+        public ActionResult Sucesso(Pessoa pessoa)
+        {
+            return View("Sucesso", pessoa);
         }
     }
 }

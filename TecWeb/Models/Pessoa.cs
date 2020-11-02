@@ -23,8 +23,8 @@ namespace TecWeb.Models
         public String nome { get; set; }
 
         [Required(ErrorMessage = "A idade deve ser informada.")]
-        [StringLength(2, ErrorMessage = "Idade valida de dois digitos numéricos.")]
-        [RegularExpression(@"^(1[89]|[2-9]\d)$", ErrorMessage = "Idade válida entre 18 e 99 anos.")]
+        [StringLength(3, ErrorMessage = "Idade valida de três digitos numéricos.")]
+        [RegularExpression(@"^([1-9]|[1-8][0-9]|9[0-9]|1[01][0-9]|120)$", ErrorMessage = "Idade válida entre 1 e 120 anos.")]
         [Display(Name = "Idade")]
         public String idade { get; set; }
 

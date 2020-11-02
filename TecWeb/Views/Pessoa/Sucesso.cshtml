@@ -1,0 +1,13 @@
+﻿@model TecWeb.Models.Pessoa
+
+@{
+    ViewBag.Title = "Sucesso";
+}
+
+<h2>
+    @Html.DisplayFor(model => model.nome) cadastrado com sucesso.
+    <div>
+        @Html.ActionLink("Voltar para pagina inicial", "Index")
+    </div>
+</h2>
+
